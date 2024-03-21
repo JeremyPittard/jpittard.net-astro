@@ -1,0 +1,4 @@
+/* TODO move this into proper setup */
+/* this is just her for scaffolding */
+/* note no tailwind config in astro 4 means intellisense won't work at the moment*/
+@import "tailwindcss";
