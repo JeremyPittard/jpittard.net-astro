@@ -2,3 +2,8 @@
 /* this is just her for scaffolding */
 /* note no tailwind config in astro 4 means intellisense won't work at the moment*/
 @import "tailwindcss";
+
+@theme {
+  --font-family-display: "Atkinson Hyperlegible", sans-serif;
+  --font-family-sans: "Atkinson Hyperlegible", sans-serif;
+}
