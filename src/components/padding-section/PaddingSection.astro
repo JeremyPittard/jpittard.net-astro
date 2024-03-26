@@ -1,0 +1,15 @@
+---
+interface Props {
+  background: "off-black" | "off-white";
+  fullHeight?: boolean;
+}
+const { background } = Astro.props;
+
+const textColor = background === "off-black" ? "text-alto" : "text-off-black";
+---
+
+<div class="w-full h-svh p-12">
+  <div class={`bg-${background} ${textColor} w-full h-full`}>
+    <slot />
+  </div>
+</div>
