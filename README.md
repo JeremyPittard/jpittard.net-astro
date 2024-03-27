@@ -9,6 +9,7 @@ this iteration of the site
 - have a cms utilizing the above
 - a tools section (eventually) for random web tools I end up making (eg the james hoffman french press recipe step by step)
 - blog with the cms mentioned above
+- explores tailwind 4.0 alpha release 😱
 
 
 ## roadmap 
