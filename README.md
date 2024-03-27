@@ -1,4 +1,4 @@
-#jpittard.net perpetually in development
+# jpittard.net perpetually in development
 
 This is is probably the 9000th version of jpittard.net, This as my personal code playground to try all the new shiny things and archive/chop/change this repository in a way that makes this easy. As such please consider it in perpetual development, even if it gets a bit quiet here and there. 
 
