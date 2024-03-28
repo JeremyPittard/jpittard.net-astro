@@ -1,8 +1,8 @@
 # jpittard.net perpetually in development
 
-This is is probably the 9000th version of jpittard.net, This as my personal code playground to try all the new shiny things and archive/chop/change this repository in a way that makes this easy. As such please consider it in perpetual development, even if it gets a bit quiet here and there. 
+This is is probably the 9000th version of jpittard.net, This as my personal code playground to try all the new shiny things and archive/chop/change this repository in a way that makes this easy. As such please consider it in perpetual development, even if it gets a bit quiet here and there.
 
-this iteration of the site 
+this iteration of the site
 
 - built with Astrojs
 - diving into astrodb
@@ -10,19 +10,17 @@ this iteration of the site
 - a tools section (eventually) for random web tools I end up making (eg the james hoffman french press recipe step by step)
 - blog with the cms mentioned above
 - explores tailwind 4.0 alpha release 😱
+- attempts a more modern implementation of ITCSS taking into account components and the use of tailwind
 
+## roadmap
 
-## roadmap 
-- [] basic website deployed
-- [] auth for cms
-- [] tools pages
-- [] cms/blog
-- [] french press tool
-- [] calorie converter tool
-- [] pomodoro timer tool
-
-
-
+- [ ] basic website deployed
+- [ ] auth for cms
+- [ ] tools pages
+- [ ] cms/blog
+- [ ] french press tool
+- [ ] calorie converter tool
+- [ ] pomodoro timer tool
 
 ## Astro Starter Kit: Basics
 
