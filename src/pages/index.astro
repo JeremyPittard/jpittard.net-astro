@@ -6,26 +6,24 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Welcome to Astro.">
   <main>
     <PaddingSection background={"dark"}>
-      <div class="max-w-[80%] lg:max-w-3xl mx-auto mb-24">
-        <h1 class="md:pt-12 py-6">Hey, I'm JP.</h1>
+      <div class="max-w-5xl mx-auto h-full flex items-center">
+        <div>
+          <h1 class="pb-6">Hey, I'm JP.</h1>
 
-        <p class="py-6">
-          I'm a
-          <span class="text-neon-pink font-bold">front-end developer</span>
-          &nbsp;who believes in&nbsp;
-          <span class="text-neon-blue">
-            collaboration, culture and community
-          </span>
-          .
-        </p>
-        <p class="py-6">
-          <a
-            href={`mailto:jeremy@jpittard.net`}
-            class="font-bold text-neon-green hoverline"
-          >
-            get in touch.
-          </a>
-        </p>
+          <p class="py-6">
+            I'm a
+            <span class="font-bold">front-end developer</span>
+            who believes in collaboration, culture and community.
+          </p>
+          <p class="py-6">
+            <a
+              href={`mailto:jeremy@jpittard.net`}
+              class="font-bold text-neon-green hoverline"
+            >
+              get in touch.
+            </a>
+          </p>
+        </div>
       </div>
     </PaddingSection>
   </main>

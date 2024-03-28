@@ -1,15 +1,4 @@
-/* TODO move this into proper setup */
-/* this is just her for scaffolding */
-/* note no tailwind config in astro 4 means intellisense won't work at the moment*/
-@import "tailwindcss";
-
-@theme {
-  --font-family-display: "Atkinson Hyperlegible", sans-serif;
-  --font-family-sans: "Atkinson Hyperlegible", sans-serif;
-
-  --color-off-black: #1b0f12;
-  --color-alto: #d3d3d3;
-}
-body {
-  background-color: var(--color-brown-lighter4);
-}
+@import "./styles/settings/index.css";
+@import "./styles/theme/index.css";
+@import "./styles/elements/index.css";
+@import "./styles/objects/index.css";
