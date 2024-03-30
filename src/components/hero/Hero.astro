@@ -1,0 +1,36 @@
+---
+import PaddingSection from "../padding-section/PaddingSection.astro";
+
+import logo from "../../assets/images/svg/logo-large.svg?raw";
+---
+
+<PaddingSection background={"dark"} hasAnimation={true}>
+  <div
+    class="max-w-[80%] md:max-w-[90%] lg:max-w-5xl mx-auto h-full flex items-center text-4xl md:text-6xl"
+  >
+    <div>
+      <div class="md:flex items-center py-6 md:pt-0 gap-6">
+        <Fragment set:html={logo} />
+        <h1 class="pt-12 md:pt-0">Hey, I'm JP.</h1>
+      </div>
+
+      <p class="py-6">
+        I'm a
+        <span class="font-bold text-neon-blue">front-end developer</span>
+        who believes in
+        <span class="text-neon-pink font-bold">
+          collaboration, culture and community.
+        </span>
+      </p>
+      <p class="py-6">
+        <a
+          href={`./jeremy-pittard-cv.pdf`}
+          class="font-bold text-neon-green hoverline"
+          download="true"
+        >
+          grab my cv.
+        </a>
+      </p>
+    </div>
+  </div>
+</PaddingSection>

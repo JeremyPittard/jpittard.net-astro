@@ -4,3 +4,10 @@
 body {
   @apply text-4xl;
 }
+
+svg {
+  fill: currentColor;
+  path {
+    fill: currentColor;
+  }
+}

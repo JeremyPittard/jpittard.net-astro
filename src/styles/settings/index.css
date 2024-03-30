@@ -1,1 +1,3 @@
 /* Settings – Variable configurations for things like colors, fonts, sizes, etc… */
+@import "./colors.css";
+@import "./typography.css";

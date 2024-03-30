@@ -1,30 +1,10 @@
 ---
-import PaddingSection from "../components/padding-section/PaddingSection.astro";
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/hero/Hero.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <PaddingSection background={"dark"}>
-      <div class="max-w-5xl mx-auto h-full flex items-center">
-        <div>
-          <h1 class="pb-6">Hey, I'm JP.</h1>
-
-          <p class="py-6">
-            I'm a
-            <span class="font-bold">front-end developer</span>
-            who believes in collaboration, culture and community.
-          </p>
-          <p class="py-6">
-            <a
-              href={`mailto:jeremy@jpittard.net`}
-              class="font-bold text-neon-green hoverline"
-            >
-              get in touch.
-            </a>
-          </p>
-        </div>
-      </div>
-    </PaddingSection>
+    <Hero />
   </main>
 </Layout>
