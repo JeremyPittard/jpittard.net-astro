@@ -48,6 +48,8 @@
     animation-range: 10px 100px;
   }
 
+  /* px-2 pb-2 md:px-6 md:pb-6 lg:px-12 lg:pb-12 */
+
   &:before {
     left: 0;
   }

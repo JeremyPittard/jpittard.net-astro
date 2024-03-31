@@ -3,6 +3,12 @@
 
 body {
   @apply text-4xl;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 svg {
