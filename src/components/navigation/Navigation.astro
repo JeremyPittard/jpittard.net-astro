@@ -1,7 +1,24 @@
-<nav class="mb-24">
-  <ul>
-    <li><a href="/">home</a></li>
-    <li><a href="/thoughts">thoughts</a></li>
-    <li><a href="/tools">tools</a></li>
-  </ul>
-</nav>
+---
+import logo from "../../assets/images/svg/logo-large.svg?raw";
+import "./styles.css";
+---
+
+<header class="fade-out pt-3 lg:pt-24 py-3 px-2 bg-gondola text-alto">
+  <nav class="py-3 px-2 max-w-[80%] lg:max-w-3xl mx-auto flex justify-between">
+    <a href={"/"} aria-label="go to home page">
+      <Fragment set:html={logo} />
+    </a>
+    <ul class="flex gap-4 text-lg items-center justify-start">
+      <li>
+        <a class="hoverline hidden md:block" href={"/thoughts"}> blog </a>
+      </li>
+      <li>
+        <a class="hoverline hidden md:block" href={"/tools"}> tools </a>
+      </li>
+      <!-- <li class="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <Hamburger isOpen={isMenuOpen} />
+      </li> -->
+    </ul>
+  </nav>
+  <!-- {isMenuOpen && <MobileMenu />} -->
+</header>

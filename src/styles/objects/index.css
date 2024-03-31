@@ -1,2 +1,3 @@
 /* Objects – Style rules for elements responsible for layout or structuring. */
 /* because this project uses tailwind to control the theme we should the @apply property to keep within the theme */
+@import "./animations.css";

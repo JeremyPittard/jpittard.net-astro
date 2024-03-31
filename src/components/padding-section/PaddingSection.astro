@@ -1,20 +1,20 @@
 ---
-import "./styles.css";
 interface Props {
   background: "dark" | "light";
   hasAnimation?: boolean;
 }
-const { background, hasAnimation } = Astro.props;
+const { background, hasAnimation, ...rest } = Astro.props;
 
 const bgColor = background === "dark" ? "bg-gondola" : "bg-alto";
 const textColor = background === "dark" ? "text-alto" : "text-gondola";
-const animateClass = hasAnimation ? "growing" : null;
+const animateClass = hasAnimation ? "fade-out" : null;
+const paddingClasses = hasAnimation
+  ? "px-2 pb-2 md:px-6 md:pb-6 lg:px-12 lg:pb-12"
+  : "p-2 md:p-6 lg:p-12";
 ---
 
-<section class=`padding-section w-full h-fit lg:h-svh p-2 md:p-6 lg:p-12`>
-  <div
-    class={`${bgColor} ${textColor} ${animateClass} w-full h-full rounded-sm p-2`}
-  >
-    <slot />
-  </div>
+<section
+  class=`padding-section w-full h-fit ${paddingClasses} ${bgColor} ${textColor}  ${animateClass}`
+>
+  <slot />
 </section>

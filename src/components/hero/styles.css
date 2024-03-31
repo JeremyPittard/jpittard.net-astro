@@ -1,0 +1,23 @@
+.hero {
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    scale: 0.1;
+    position: absolute;
+    background-color: red;
+    /* background-color: var(--color-gondola); */
+    z-index: 3;
+    animation: grow ease-out forwards;
+    animation-timeline: view();
+    animation-range: 300px 500px;
+  }
+}
+
+@keyframes grow {
+  to {
+    transform: scaleX(1);
+  }
+}

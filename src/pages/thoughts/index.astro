@@ -1,9 +1,12 @@
 ---
+import PaddingSection from "../../components/padding-section/PaddingSection.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="thoughts">
   <main>
-    <h1 class="text-9xl">Thoughts</h1>
+    <PaddingSection background="dark" hasAnimation={true}>
+      <h1 class="text-9xl">Thoughts</h1>
+    </PaddingSection>
   </main>
 </Layout>
