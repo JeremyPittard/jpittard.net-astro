@@ -1,15 +1,18 @@
 ---
 import { getCollection } from "astro:content";
+import PaddingSection from "../padding-section/PaddingSection.astro";
 
 const posts = await getCollection("thoughts");
 ---
 
-<ul>
-  {
-    posts.map((post) => (
-      <li>
-        <a href={`/thoughts/${post.slug}`}>{post.data.title}</a>
-      </li>
-    ))
-  }
-</ul>
+<PaddingSection background="light">
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <a href={`/thoughts/${post.slug}`}>{post.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</PaddingSection>

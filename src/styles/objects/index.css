@@ -1,3 +1,13 @@
 /* Objects – Style rules for elements responsible for layout or structuring. */
-/* because this project uses tailwind to control the theme we should the @apply property to keep within the theme */
 @import "./animations.css";
+
+body {
+  @apply text-4xl;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+footer {
+  margin-top: auto;
+}

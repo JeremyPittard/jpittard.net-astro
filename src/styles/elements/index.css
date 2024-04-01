@@ -1,19 +1,5 @@
 /* Elements – Style rules for bare HTML elements (like h1 or button). */
-/* because this project uses tailwind to control the theme we should the @apply property to keep within the theme */
 
-body {
-  @apply text-4xl;
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
-}
-
-svg {
-  fill: currentColor;
-  path {
-    fill: currentColor;
-  }
-}
+@import "./anchors.css";
+@import "./img.css";
+@import "./scrollbar.css";
