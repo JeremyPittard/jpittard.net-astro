@@ -1,0 +1,20 @@
+---
+export const prerender = true;
+import { getCollection } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const thoughts = await getCollection("thoughts");
+  return thoughts.map((thought) => ({
+    params: { slug: thought.slug },
+    props: { thought },
+  }));
+}
+
+const { thought } = Astro.props;
+---
+
+<Layout title={thought.data.title}>
+  <h1>{thought.body}</h1>
+</Layout>
