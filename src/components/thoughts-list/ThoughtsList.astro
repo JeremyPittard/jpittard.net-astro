@@ -6,13 +6,17 @@ const posts = await getCollection("thoughts");
 ---
 
 <PaddingSection background="light">
-  <ul>
-    {
-      posts.map((post) => (
-        <li>
-          <a href={`/thoughts/${post.slug}`}>{post.data.title}</a>
-        </li>
-      ))
-    }
-  </ul>
+  {
+    posts.length === 0 ? (
+      <p>no thoughts yet</p>
+    ) : (
+      <ul>
+        {posts.map((post: any) => (
+          <li>
+            <a href={`/thoughts/${post.slug}`}>{post.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
 </PaddingSection>
