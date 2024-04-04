@@ -2,7 +2,14 @@
 import { getCollection } from "astro:content";
 import PaddingSection from "../padding-section/PaddingSection.astro";
 
-const posts = await getCollection("thoughts");
+interface Props {
+  pinnedOnly?: boolean;
+}
+const { pinnedOnly, ...rest } = Astro.props;
+
+const posts = pinnedOnly
+  ? await getCollection("thoughts", (thought: any) => thought.data.pinned)
+  : await getCollection("thoughts");
 ---
 
 <PaddingSection background="light">

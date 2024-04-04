@@ -10,6 +10,25 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+const transitions = {
+  old: {
+    name: "page-exit", // same name as the keyframe in layouts/Main
+    duration: "0.3s",
+    easing: "ease-out",
+  },
+  new: {
+    name: "page-enter",
+    duration: "0.3s",
+    easing: "ease-out",
+    delay: "500ms",
+  },
+};
+
+const thePageTransistion = {
+  forwards: transitions,
+  backwards: transitions,
+};
 ---
 
 <!doctype html>
@@ -22,9 +41,11 @@ const { title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions exit-class="exit" entry-class="enter" />
   </head>
-  <body class="bg-alto">
+  <body class="bg-alto fade-out">
     <Navigation />
-    <slot />
+    <div transition:animate={thePageTransistion}>
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>

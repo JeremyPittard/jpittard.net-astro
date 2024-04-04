@@ -1,41 +1,15 @@
 ---
 interface Props {
   background: "dark" | "light";
-  hasAnimation?: boolean;
+  verticalPadding?: boolean;
 }
-const { background, hasAnimation, ...rest } = Astro.props;
+const { background, verticalPadding, ...rest } = Astro.props;
 
-const bgColor = background === "dark" ? "bg-gondola" : "bg-alto";
-const textColor = background === "dark" ? "text-alto" : "text-gondola";
-const animateClass = hasAnimation ? "fade-out" : null;
-const paddingClasses = hasAnimation
+const paddingClasses = verticalPadding
   ? "px-2 pb-2 md:px-6 md:pb-6 lg:px-12 lg:pb-12"
   : "p-2 md:p-6 lg:p-12";
-
-const transitions = {
-  old: {
-    name: "page-exit", // same name as the keyframe in layouts/Main
-    duration: "0.3s",
-    easing: "ease-out",
-  },
-  new: {
-    name: "page-enter",
-    duration: "0.3s",
-    easing: "ease-out",
-    delay: "500ms",
-  },
-};
-
-const thePageTransistion = {
-  forwards: transitions,
-  backwards: transitions,
-};
 ---
 
-<section
-  class=`padding-section w-full h-fit ${paddingClasses} ${bgColor} ${textColor}  ${animateClass}`
->
-  <div transition:animate={thePageTransistion}>
-    <slot />
-  </div>
+<section class=`padding-section w-full h-fit ${paddingClasses}`>
+  <slot />
 </section>

@@ -23,6 +23,11 @@ export default config({
           links: true,
           images: true,
         }),
+        publishDate: fields.date({
+          label: "Published On",
+          defaultValue: { kind: "today" },
+        }),
+        isPinned: fields.checkbox({ label: "Pin this post?" }),
       },
     }),
   },
